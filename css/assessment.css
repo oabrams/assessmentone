@@ -1,0 +1,42 @@
+img{
+   width: 125px;
+   margin-bottom: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+h1{
+  text-align: center;
+  text-transform: lowercase;
+}
+
+#mystuff{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  text-align: center;
+}
+
+div{
+   padding: 25px;
+   margin:5px;
+}
+
+body{
+  background-image: url('../images/background.jpeg')
+}
+
+@media all and (min-width: 800px){
+
+  #mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  div:nth-child(odd){
+    border-style: solid;
+    border-width: 1.5px;
+  }
+}
